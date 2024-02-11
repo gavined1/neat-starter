@@ -5,6 +5,11 @@ path: home
 ---
 
 {% include "./_includes/partials/navbar-pc.html" %}
+<!-- carousel -->
+{% for item in collections.carouselElements %}
+<!-- Insert your carousel item here -->
+{{ item.templateContent | safe }} {% endfor %}
+
 <div
   class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
 >
